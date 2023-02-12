@@ -1,0 +1,200 @@
+html,body{margin: 0;padding: 0;height: 100%;overflow-x: hidden;}
+
+body{background-color: rgb(33, 38, 50);
+    font-family: 'Raleway';}
+
+
+/* Body */
+.total-content-container{
+    display: inline-flex;        
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    
+}
+.left-column,.right-column{
+    position: fixed;
+    bottom: 30px;
+}
+
+/* Center Column */
+/* -------------------------------- */
+.center-column{
+    flex: 1 1 50%;
+    margin-left: 27%;
+    margin-right: 3%;
+    padding-left:.5% ;
+    padding-right: .5%;
+    width: 40%;
+    height: 100%;
+    overflow:hidden;
+}
+/* Left Column
+/* -------------------------------- */
+.left-column{
+    flex: 1 1 20%;
+    width: 20%;
+    position: fixed;
+    top: 120px;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+}
+.left-column ul{
+    margin-right: 5%;
+    }
+/* Left column Table of contents */
+.toc-container{
+    padding-right: 2%;
+    float: right;
+    position: sticky;
+}
+.content-container-title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+
+}
+.page-toc{
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+
+.page-toc li{
+    padding-bottom: 15px;
+}
+.page-toc li a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.831);
+    font-style: italic;
+}
+/* Right Column
+/* -------------------------------- */
+
+  
+.right-column__thumb-y {
+    width: 10px !important;
+    background-color: rgb(34, 29, 29) !important;
+  }
+.right-column__rail-y {
+    background-color: rgb(65, 5, 5) !important;
+  }
+.right-column{
+    flex: 1 1 34%;
+    width: 23%;
+    position:  relative;
+    overflow-y: scroll;
+    right: 0%;
+    margin-right: 5%;
+    height: 100%;
+    top: 0;
+}
+.all-card-container{
+    margin-top: 10px;
+    
+}
+.card-container{
+    display: flex;
+    padding-bottom: 5%;
+    padding-left: 0%;
+}
+.card-container:hover{
+    box-shadow: -2px 0px rgb(246, 234, 65);
+    transition: 300ms;
+}
+/* Left Portion of the Card */
+.card-hr{
+    width: 96%;
+    float: left;
+}
+.card-left{
+    flex-basis: 35%;
+    float: left;
+    border: .5px solif gainsboro;
+}
+.card-name-description{
+    height: 240px;
+}
+.card-name{
+    font-family:'dm serif display';
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+.card-detail{
+    font-family:'dm serif display';
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.831);
+    font-style: italic;
+}
+
+
+/* right portion of the card */
+.card-right{
+    width: 65%;
+    float: right;
+}
+.card-image{
+    width: 100%;
+    height: 240px;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+.stats-container{
+
+}
+.card-stat{
+    font-family: 'dm serif display';
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.831);
+    font-style: italic;
+}
+.card-container span{
+    font-family:'dm serif display';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+
+
+/* Responsive Web Design */
+/* -------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------- */
+@media(max-width: 700px){
+    .footer,.body{
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .footer div{
+        flex-basis: 45%;
+        flex-shrink: 0;
+        flex-grow: 0;
+        
+        border: 1px solid white;
+        margin-bottom: 10px;
+    }
+
+.left-column,
+.right-column,
+.center-column{
+    flex-basis: 100%;
+    flex-shrink: 100%;
+    flex-grow: 100%;
+}
+}
+
+

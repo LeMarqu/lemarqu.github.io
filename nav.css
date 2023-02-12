@@ -1,0 +1,225 @@
+
+/* Navigation Bar */
+/* -------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------- */
+.nav{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(19, 31, 59);
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* Top Left Logo */
+.brand{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'dm serif display';
+    font-size: 30px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 5px;
+    margin-left: 4%;
+}
+/* Top Nav Bar with dropdowns */
+.tools{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Raleway';
+    font-size: 20px;
+    justify-content: space-around;
+    text-align: center;
+    flex-basis: 700px;
+    flex-grow: 0;    
+    flex-shrink: 0;
+    padding: 5px;
+    padding-top: 15px;
+    display: flex;
+}
+.tools a{
+    padding-top: 0;
+}
+.tools-other{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Raleway';
+    font-size: 20px;
+    justify-content: space-around;
+    text-align: center;
+    flex-basis: 700px;
+    flex-grow: 0;    
+    flex-shrink: 0;
+    padding: 5px;
+    padding-top: 15px;
+    display: flex;
+}
+.tools-other a{
+    padding-top: 0;
+}
+
+
+/* login space */
+.nav-login-space{
+    text-align: right;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 5px;
+    margin-right: 4%;
+    padding-top:15px;
+}
+.nav-buttons,.nav-buttons1{
+    text-align: right;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 5px;
+    padding-top:15px;
+}
+.nav-login-space .nav-buttons:hover{
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(86, 176, 249);
+    transition: 100ms;
+}
+
+.nav-buttons1{
+    background-color: rgb(86, 176, 249);
+    border-radius: 5px;
+    color: black;
+    padding-top: 5px;
+}
+.nav-login-space .nav-buttons1:hover{
+    color: aliceblue;
+    text-shadow: 1px 1px #242330;
+    box-shadow: .5px .5px rgb(86, 176, 249);
+    transition: 100ms;
+}
+/* Dropdown Button */
+.dropbtn {
+    color: aliceblue;
+    background-color: rgb(19, 31, 59);
+    border: none;
+    font-family:'Raleway';
+    font-size: 20px;
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {    
+    display: flex;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #242330;
+    margin-top: 30px;
+    column-count: 5;
+    padding: 15px;
+    padding-top: 35px;
+    margin-left: -250px;
+    border-radius: 15px;
+    min-width: 900px;
+    min-height: 400px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+  }
+  .dropdown-content1{
+    display: none;
+    position: absolute;
+    background-color: #242330;
+    margin-top: 30px;
+    column-count: 5;
+    padding: 15px;
+    padding-top: 35px;
+    margin-left: -250px;
+    border-radius: 15px;
+    min-width: 675px;
+    min-height: 400px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+  }
+.col{
+    height: 450px;
+    text-decoration: none;
+    line-height: 200%;
+}
+/* Links inside the dropdown */
+.dropdown-top-link {
+    color: rgb(246, 234, 65);
+    font-family:'Raleway';
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    flex-basis: 33%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.dropdown-title{
+    text-decoration: none;
+    color: rgb(246, 234, 65);
+    font-size: 25px;
+
+}
+.dropdown-link {
+    color: aliceblue;
+    font-family:'Raleway';
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    flex-basis: 15%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+/* Change color of dropdown links on hover */
+
+.tools .dropbtn:hover {
+    text-shadow: 1.5px 1.5px rgb(48, 48, 236);
+    transition: 100ms;
+    font-size: 105%;  
+} 
+.tools-other:hover {
+    text-shadow: 1.5px 1.5px rgb(48, 48, 236);
+    transition: 100ms;
+    font-size: 105%;  
+} 
+.dropdown-content .col .dropdown-link:hover {
+    text-shadow: 5px 1.5px rgb(48, 48, 236);
+    transition: 150ms;
+    font-size: 105%;  
+    font-weight: 500;
+}
+.dropdown-content .col .dropdown-title:hover {
+    text-shadow: 1.5px 1.5px 5px rgb(45, 43, 12);
+    transition: 150ms;
+    font-weight: 600;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    text-shadow: 1.5px 1.5px rgb(48, 48, 236);
+    transition: 100ms;  
+    cursor:default;
+    font-size: 105%;
+}
+
+
+/* -------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------- */
